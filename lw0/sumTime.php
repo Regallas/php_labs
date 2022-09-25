@@ -35,6 +35,5 @@
             $newtime[2] -= 60;
         }
 
-        $time = implode(":", $newtime);
-        return $time;
+        return implode(":", $newtime);
      }
