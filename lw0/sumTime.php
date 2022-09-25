@@ -7,7 +7,7 @@
      
      echo $result;
 
-     function sumtime (string $time1, string $time2): string
+     function sumTime(string $time1, string $time2): string
      {
         $valuetime1 = explode(':', $time1);
         $valuetime2 = explode(':', $time2);
