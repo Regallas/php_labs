@@ -19,30 +19,30 @@
             return 'error';
         }
 
-        if($str[0] === '+' || $str[0] === '-'){
+        if ($str[0] === '+' || $str[0] === '-') {
             return'Incorrect input';
         }
 
         foreach ($str as $sign) {
-            if($sign === '+'){
+            if ($sign === '+'){
                 $operations[$operationcounter] = '+';
             } 
-            if($sign === '-'){
+            if ($sign === '-'){
                 $operations[$operationcounter] = '-';
             }
-            if($operationcounter > 8) {
+            if ($operationcounter > 8) {
                 return 'err';
             }
             $operationcounter++;
         }
 
         for ($i = 0, $j = 1, $k = 1; $i < 9; $i+=2, $j+=2, $k++) {
-            if($j < $operationcounter) {
-                if($operations[$j] === '+') {
+            if ($j < $operationcounter) {
+                if ($operations[$j] === '+') {
                     $numbers[$k] = intval($numbers[$k - 1]) + intval($str[$i + 2]);
                     $answer = $numbers[$k];
                 } 
-                if($operations[$j] === '-'){
+                if ($operations[$j] === '-') {
                     $numbers[$k] = intval($numbers[$k - 1]) - intval($str[$i + 2]);
                     $answer = $numbers[$k];
                 }
