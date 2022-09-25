@@ -24,11 +24,11 @@
         }
 
         foreach ($str as $sign) {
-            if ($sign === '+'){
-                $operations [$operationcounter] = '+';
+            if ($sign === '+') {
+                $operations[$operationcounter] = '+';
             } 
-            if ($sign === '-'){
-                $operations [$operationcounter] = '-';
+            if ($sign === '-') {
+                $operations[$operationcounter] = '-';
             }
             if ($operationcounter > 8) {
                 return 'err';
