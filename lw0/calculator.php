@@ -14,13 +14,11 @@
         $operations = [];
         $numbers[0] = $str[0];
 
-        if (preg_match("#^[0-9\-+]+$#", $value)) {
-            echo "Недопустимые символы не найдены! \n";
-        } else {
+        if (!preg_match("#^[0-9\-+]+$#", $value)) {
             return 'error';
         }
 
-        if($str[0] === '+' or $str[0] === '-'){
+        if($str[0] === '+' || $str[0] === '-'){
             return'Incorrect input';
         }
 
@@ -55,4 +53,3 @@
 
         return $value;
     }
-?>
