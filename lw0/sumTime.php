@@ -3,7 +3,7 @@
      $time1 = $argv[1];
      $time2 = $argv[2];
 
-     $result = sumtime ($time1, $time2);
+     $result = sumTime($time1, $time2);
      
      echo $result;
 
