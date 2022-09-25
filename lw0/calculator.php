@@ -25,10 +25,10 @@
 
         foreach ($str as $sign) {
             if ($sign === '+'){
-                $operations[$operationcounter] = '+';
+                $operations [$operationcounter] = '+';
             } 
             if ($sign === '-'){
-                $operations[$operationcounter] = '-';
+                $operations [$operationcounter] = '-';
             }
             if ($operationcounter > 8) {
                 return 'err';
