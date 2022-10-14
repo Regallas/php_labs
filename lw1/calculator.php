@@ -51,4 +51,4 @@
 
 $calculator = new Calculator();
 
-echo $calculator->sum(100)->sum(15)->division(5)->minus(7)->getResult();
+echo $calculator->sum(100)->sum(15)->division(0)->minus(7)->getResult();
