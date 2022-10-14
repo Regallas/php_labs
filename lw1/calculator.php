@@ -34,12 +34,12 @@
         public function division($divisionvalue) {
 
             $this->divisionvalue = $divisionvalue;
-                if($divisionvalue === 0) {
+                if ($divisionvalue === 0) {
                     $this->value = 0;
                     return $this; 
                 }
 
-                $this->value /= $divisionvalue;
+            $this->value /= $divisionvalue;
             return $this;
         }
 
