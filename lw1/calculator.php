@@ -1,53 +1,54 @@
 <?php
-    class Calculator {
-        private $value;
-        private $sumvalue;
-        private $minusvalue;
-        private $productvalue;
-        private $divisionvalue;
-        private $finalvalue;
+class Calculator
+{
+    private float $value = 0;
 
-        public function sum($sumvalue) {
+    public function sum($sumvalue): self
+    {
 
-            $this->sumvalue = $sumvalue;
+        $this->sumvalue = $sumvalue;
 
-            $this->value += $sumvalue;
-            return $this;
-        }
-
-        public function minus($minusvalue) {
-
-            $this->minusvalue = $minusvalue;
-
-            $this->value -= $minusvalue;
-            return $this;
-        }
-
-        public function product($productvalue) {
-
-            $this->productvalue = $productvalue;
-
-            $this->value *= $productvalue;
-            return $this;
-        }
-
-        public function division($divisionvalue) {
-
-            $this->divisionvalue = $divisionvalue;
-                if ($divisionvalue === 0) {
-                    $this->value = 0;
-                    return $this; 
-                }
-
-            $this->value /= $divisionvalue;
-            return $this;
-        }
-
-        public function getResult() {
-            $finalvalue = $this->value;
-            return $finalvalue;
-        }
+        $this->value += $sumvalue;
+        return $this;
     }
+
+    public function minus($minusvalue): self
+    {
+
+        $this->minusvalue = $minusvalue;
+
+        $this->value -= $minusvalue;
+        return $this;
+    }
+
+    public function product($productvalue): self
+    {
+
+        $this->productvalue = $productvalue;
+
+        $this->value *= $productvalue;
+        return $this;
+    }
+
+    public function division($divisionvalue): self
+    {
+
+        $this->divisionvalue = $divisionvalue;
+        if ($divisionvalue === 0) {
+            $this->value = 0;
+            return $this;
+        }
+
+        $this->value /= $divisionvalue;
+        return $this;
+    }
+
+    public function getResult(): float
+    {
+        $finalvalue = $this->value;
+        return $finalvalue;
+    }
+}
 
 $calculator = new Calculator();
 
