@@ -10,7 +10,6 @@
     {
 
         $str = str_split($value);
-        $number = explode();
         $operationcounter = 0;
         $operations = [];
         $numbers[0] = $str[0];
