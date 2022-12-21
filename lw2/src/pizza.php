@@ -1,4 +1,7 @@
 <?php
+/*
+Просто коммент
+*/
 abstract class Pizza
 {
 

@@ -15,14 +15,5 @@
     "require-dev": {
         "phpstan/phpstan": "^1.9",
         "phpunit/phpunit": "^9.5"
-    },
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://github.com/ramz090/PHP_lab/tree/master/lw2"
-        }
-    ],
-    "require": {
-        "ramz090/PHP_lab": "dev-master"
     }
 }
