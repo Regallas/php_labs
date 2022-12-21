@@ -8,7 +8,9 @@ abstract class PizzaStore
     {
         print ("Приветствуем в нашей пиццерии, какие будут пожелания?") . PHP_EOL;
         $pizza = $this->createPizza($type);
+
         $pizza->prepare();
+        
         $pizza->cut();
     }
 }
