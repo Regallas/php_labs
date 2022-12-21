@@ -1,8 +1,5 @@
 <?php
 require_once "Pizza.php";
-/*
-Просто коммент
-*/
 abstract class PizzaStore
 {
     abstract function createPizza(string $type): Pizza;
